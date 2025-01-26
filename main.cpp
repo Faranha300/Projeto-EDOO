@@ -1,20 +1,19 @@
 #include <iostream>
-#include <string>
-//#include <fstream>
+#include "src/Parser.h"
 using namespace std;
 
-int main()
-{
-    //ifstream file("input.txt");
-    // Numero de casos
-    int C;
-    cin >> C;
+int main() {
+    int numCases;
+    cin >> numCases;
     cin.ignore();
 
-    for (int i = 0; i < C; i++){
+    for (int i = 0; i < numCases; ++i) {
         string expression;
         getline(cin, expression);
-        cout << expression << endl;
+
+        Parser parser(expression);
+        cout << parser.evaluate() << endl;
     }
+
     return 0;
 }
