@@ -1,5 +1,7 @@
 # Projeto-EDOO
 
+Projeto da disciplina de Estrutura de Dados Orientada a Objetos - 2024.2 
+
 ## Compilação
 
 ```
