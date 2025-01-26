@@ -85,6 +85,7 @@ Value Parser::parseMulExp() {
         string op = currentToken.value;
         nextToken();
         Value nextVal = parseUnaryExp();
+        if (op == "/" && nextVal.asInt() == 0) throw runtime_error("error");
         value = (op == "*") ? value.asInt() * nextVal.asInt() : value.asInt() / nextVal.asInt();
     }
     return value;

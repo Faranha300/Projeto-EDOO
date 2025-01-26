@@ -5,7 +5,7 @@
 using namespace std;
 
 enum class TokenType {
-    INTEGER, BOOLEAN, OPERATOR, PARENTHESIS, END
+    INTEGER, BOOLEAN, OPERATOR, END
 };
 
 class Token {
